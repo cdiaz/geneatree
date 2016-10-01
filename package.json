@@ -1,0 +1,30 @@
+{
+  "name": "geneatree",
+  "version": "1.0.0",
+  "description": "Gedcom Browser",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "grunt build-styles && ./node_modules/.bin/electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikkow/geneatree.git"
+  },
+  "author": "Nicolas Nunge <me@nikkow.eu>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nikkow/geneatree/issues"
+  },
+  "homepage": "https://github.com/nikkow/geneatree#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "electron-prebuilt": "^1.2.7",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "load-grunt-tasks": "^3.5.0"
+  },
+  "dependencies": {}
+}

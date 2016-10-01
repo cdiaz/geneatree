@@ -1,0 +1,67 @@
+@import "_variables.scss";
+@import "_fonts.scss";
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $splash-background;
+    color: $splash-foreground;
+    font-family: 'robotoregular', sans-serif;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    font-family: "robotolight";
+    font-size: 11px;
+    color: darken($splash-foreground, 30%);
+}
+
+h1 {
+    font-family: 'robotothin';
+    font-weight: normal;
+    font-size: 70px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.dropzone {
+    border: 2px dashed $splash-foreground;
+    text-align: center;
+    padding: 30px;
+    font-family: 'robotolight';
+    width: 75%;
+
+    img.faded {
+        opacity: .35;
+    }
+
+    b {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'robotoregular';
+        font-weight: normal;
+    }
+
+    &.dragged {
+        border: 2px solid green;
+    }
+}
